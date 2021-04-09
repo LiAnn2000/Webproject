@@ -1,0 +1,28 @@
+.cars{
+background-color: tomato;
+color: white;
+border: 2px solid black;
+margin: 20px;
+padding: 20px;
+}
+
+.motor{
+background-color: red;
+color: white;
+border: 2px solid black;
+margin: 20px;
+padding: 20px;
+}
+
+.Track{
+    text-align: center;
+    background-color: rgb(20, 173, 233);
+    color: white;
+    border: 2px solid black;
+    margin: 20px;
+    padding: 20px; 
+}
+
+#carscolors{
+    color: cyan;
+}
