@@ -1,0 +1,25 @@
+div {
+    align-items: center;
+}
+
+#input table {
+    border: 1px solid black;
+}
+
+table.center {
+    margin: auto;
+}
+
+table th{
+    border-bottom: double;
+    text-shadow: 2px 2px 5px black;
+}
+
+#input table tr th{
+    background-color: rgb(140, 191, 206);
+}
+
+div.center#button {
+    width: 35%;
+    margin: auto;
+}
