@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="./answer.php" method="POST">
+        <fieldset>
+            <legend>Personalia</legend>
+            <label for="name" id="name">姓名</label><br>
+            <input type="text" name="name" id="name"><br>
+            <label for="gender">性别</label><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label><br>
+            <label for="bdaymonth">出生:</label><br>
+            <input type="month" id="bdaymonth" name="bdaymonth"><br>
+            <label for="email" id="email">E-mail</label><br>
+            <input type="email" name="email" id="email"><br>
+            <label for="phone">Enter a phone number:</label><br>
+            <input type="tel" id="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br>
+            <label for="ex1">请问你喜欢什么颜色的车子?</label><br>
+            <input type="radio" name="ex1" id="color1" value="red">red</input><br>
+            <input type="radio" name="ex1" id="color2" value="blue">blue</input><br>
+            <label for="cars">汽车品牌:</label><br>
+            <input list="cars" id="cars">
+            <select name="cars" id="cars">
+                <option value="BMW">BMW</option>
+                <option value="BenZ">BenZ</option>
+                <option value="Honda">Honda</option>           
+        </fieldset> 
+        <input type="submit" name="submit"></input>
+</body>
+</html>
