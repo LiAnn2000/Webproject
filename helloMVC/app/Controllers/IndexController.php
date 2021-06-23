@@ -4,6 +4,7 @@ namespace App\Controllers;
 
 use kernel\Controller;
 use App\Model\indexModel;
+use App\Views\indexView;
 
 class IndexController extends Controller {
 
@@ -11,6 +12,7 @@ class IndexController extends Controller {
         $username = new indexModel();
         $result = $username->printname();
 
-        print $result;
+        //print $result;
+        (new indexView())->show($result);
     }
 }
