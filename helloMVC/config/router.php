@@ -21,11 +21,9 @@ class Router {
     }
     
     public function run(){
-        //分析参数
         $uri = explode('?',$this->request);
-        //var_dump($uri);
-        if ($this->hasRoute($this->request)){
-            return self::$routes['/'.$this->request];
+        if ($this->hasRoute($uri[0])){
+            return array($uri[0],(self::$routes['/'.$uri[0]]));
         }
-    }
+    }    
 }

@@ -2,8 +2,8 @@
 namespace App\Controllers;
 
 use kernel\Controller;
-use App\Models\indexModel;
-use App\Views\indexView;
+//use App\Models\indexModel;
+use App\Views\loginView;
 use App\DBs\DB;
 
 class LoginController extends Controller {
@@ -22,5 +22,7 @@ class LoginController extends Controller {
     public function run(){
         $db = new DB("students");
         var_dump($db->fetchAll());
+        $view = new loginView("/login");
+        $view->show($db->fetchAll()); 
     }
 }
